@@ -74,7 +74,32 @@ main .info .fa-info {
 
 
 
-/* section Activities */
+/* RESPONSIVE */
+
+/* TABLETTE */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #filter { 
+    padding: 0px 30px;
+    flex-wrap: wrap;
+  }
+  #filter h4{
+    margin-bottom: 0; 
+  }
+  #filter ul {  
+    flex-wrap: wrap;
+  } 
+  .select_filter {
+    margin: 9px 19px;
+  }
+
+  main .info {
+    padding-left: 30px;
+}
+  
+}
+
+/* MOBILE */
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
 

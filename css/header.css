@@ -92,6 +92,26 @@ section .searchbar .btn-search .fa-search {
     display: none;
 }
 
+/* RESPONSIVE */
+
+/* TABLETTE */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header #logo {
+    padding: 25px;
+  }
+  section .title {
+    line-height: initial;
+    padding: 0 30px;
+}
+section .searchbar {
+  padding: 11px 30px;
+} 
+  
+}
+
+/* MOBILE */
+
 @media screen and (min-width: 300px) and (max-width: 768px){
     body{
       width: auto;
@@ -129,6 +149,7 @@ section .searchbar .btn-search .fa-search {
   
     section .title {
       padding: 20px 40px 10px 30px;
+      line-height: initial;
     }
   
     section .searchbar {
@@ -141,16 +162,17 @@ section .searchbar .btn-search .fa-search {
       padding: 0px 0 0 21px;
     }
     section .searchbar #localisation {
-      padding: 20px 15px;
-      font-size: 10px;
+      padding: 16px 15px;
+      font-size: 18px;
     }
+    
     section .searchbar .btn-search {
       padding: 11px 22px;
       font-size: 15px;
     }
     section .searchbar .fa-map-marker-alt {
-      padding: 11px 18px;
-      font-size: 32px;
+      padding: 9px 29px;
+      font-size: 36px;
     }
     section .searchbar .btn-search span{
       display:none; 

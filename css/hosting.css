@@ -213,6 +213,69 @@
     color: #0065FC;
 }
 
+/* RESPONSIVE */
+
+/* TABLETTE */
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+
+    #hosting {
+        padding: 1%;
+    }
+    #products {
+        margin-right: 12px;
+    }
+
+    #products #allproduct #products h3 {
+        font-size: 12px;
+    }
+
+    #products #allproduct .card-hotel {
+        height: 179px;
+        width: 159px;
+    }
+
+    #products #allproduct .card-hotel img {
+        height: 63px;
+    }
+    
+    #products #allproduct .card-hotel .description {
+        margin: 0;
+        line-height: 15Px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 85px;
+    }
+    
+    #hosting #products #allproduct .card-hotel .description .title_product {
+        margin: 0px 0 10px 0px;
+    }
+
+    #hosting #most-popular .card-hotel a .description h5 {
+        margin: 0;
+        font-size: 13px;
+    }
+    #most-popular {
+        width: 48%;
+        padding: 11px;
+    }
+
+    #most-popular .title-popular {
+        margin: 7px 0 9px 0px;
+        font-size: 16px;
+    }
+    .mosthotel {
+        padding: 4px;
+    }
+
+    #hosting #most-popular .card-hotel .mosthotel a img {
+        width: 24%;
+    }
+}
+
+/* MOBILE */
+
 @media screen and (min-width: 300px) and (max-width: 768px) {
 
     main .info {
@@ -246,12 +309,11 @@
     /* Title aside products */
 
     .title-popular {
-        margin: 7px 0 9px 0px;
-        text-align: center;
-    }
-
-    .title-popular .fa-chart-line {
-        padding-left: 13%;
+        margin: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #hosting #most-popular .group {
@@ -259,6 +321,13 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+    
+    #hosting #most-popular .card-hotel a .description h5 {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* Basic Hosting */
 
     #products {
         background-color: white;
@@ -274,17 +343,21 @@
         margin-right: 0;
         border-radius: 0;
     }
-
+    
     #products #allproduct .card-hotel {
         width: 100%;
+        height: 100%;
+    }
+    #products #allproduct .card-hotel img {
+        height: 150px;
+    }
+
+    #hosting #products #allproduct .card-hotel .description .title_product {
+
+        margin-top: 0;
     }
 
     #products h3 {
         font-size: 20px;
-        text-align: center;
-    }
-
-    #products .see-more {
-        text-align: center;
     }
 }
