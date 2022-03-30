@@ -1,95 +1,96 @@
 /*** Start - Header ***/
 
 /* Menu */
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-  
+
 header #logo {
-    padding: 25px 0px;
+  padding: 25px 0px;
 }
-  
+
 header #logo img {
-    width: 50%;
+  width: 50%;
 }
-  
+
 header .navbar .menu {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
 }
-  
+
 header .navbar .menu li {
-    padding: 50px 25px;
-    border-top: 4px solid transparent;
-    margin: 0 20px 0px 20px;
+  padding: 50px 25px;
+  border-top: 4px solid transparent;
+  margin: 0 20px 0px 20px;
 }
-  
+
 header .navbar .menu li:hover {
-    border-color: #0065fc;
+  border-color: #0065fc;
 }
-  
+
 header .navbar .menu li a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
-  
+
 header .navbar .menu li:hover a {
-    color: #0065fc;
+  color: #0065fc;
 }
-  
+
 /*** END - Header ***/
-  
+
 /*** Title & Search ***/
-  
+
 /* Title */
-  
-section .title{
-    line-height: 20px;
-    margin: 0;
+
+section .title {
+  line-height: 20px;
+  margin: 0;
 }
-  
-section .title p{
-    font-size: x-large;
+
+section .title p {
+  font-size: x-large;
 }
-  
+
 /* Seach Bar */
-section .searchbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+section .searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-  
-section .searchbar .fa-map-marker-alt{
-    border-radius: 20% 0% 0% 20%;;
-    padding: 22px 23px;
-    background-color: #F2F2F2;
+
+section .searchbar .fa-map-marker-alt {
+  border-radius: 20% 0% 0% 20%;
+  ;
+  padding: 22px 23px;
+  background-color: #F2F2F2;
 }
-  
-section .searchbar #localisation{
-    padding: 1%;
-    font-weight: 600;
-    border: solid 1px #F2F2F2;
+
+section .searchbar #localisation {
+  padding: 1%;
+  font-weight: 600;
+  border: solid 1px #F2F2F2;
 }
-  
-section .searchbar .btn-search{
-    border-radius: 0px 18px 18px 0;
-    padding: 1%;
-    background-color: #0065FC;
-    border-style: none;
-    cursor: pointer;
+
+section .searchbar .btn-search {
+  border-radius: 0px 18px 18px 0;
+  padding: 1%;
+  background-color: #0065FC;
+  border-style: none;
+  cursor: pointer;
 }
-  
+
 section .searchbar .btn-search span {
-    color: white;
-    font-weight: 600;
+  color: white;
+  font-weight: 600;
 }
-  
+
 section .searchbar .btn-search .fa-search {
-    display: none;
+  display: none;
 }
 
 /* RESPONSIVE */
@@ -100,105 +101,114 @@ section .searchbar .btn-search .fa-search {
   header #logo {
     padding: 25px;
   }
+
   section .title {
     line-height: initial;
     padding: 0 30px;
-}
-section .searchbar {
-  padding: 11px 30px;
-} 
-  
+  }
+
+  section .searchbar {
+    padding: 11px 30px;
+  }
+
 }
 
 /* MOBILE */
 
-@media screen and (min-width: 300px) and (max-width: 768px){
-    body{
-      width: auto;
-      -webkit-text-size-adjust: 100%;
-    }
-    header {
-      display: flow-root;
-      flex-direction: column;
-    }
-  
-    header #logo {
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  body {
+    width: auto;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  header {
+    display: flow-root;
+    flex-direction: column;
+  }
+
+  header #logo {
     text-align: center;
-    }
-  
-    header #logo img{
-      width: 23%;
-    }
-  
-    header .navbar .menu{
-      margin: 0px -11px;
-      padding: 0;
-    }
-  
-    header .navbar .menu li {
-      width: 50%;
-      padding: 20px;
-      text-align: center;
-      margin: 0px;
-      border-top: none;
-      border-bottom: 2px solid #F2F2F2;
-    }
-    header .navbar .menu li:hover {
+  }
+
+  header #logo img {
+    width: 23%;
+  }
+
+  header .navbar .menu {
+    margin: 0px -11px;
+    padding: 0;
+  }
+
+  header .navbar .menu li {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+  }
+
+  header .navbar .menu li:hover {
     border-bottom: 2px solid #0065fc;
-    }
-  
-    section .title {
-      padding: 20px 40px 10px 30px;
-      line-height: initial;
-    }
-  
-    section .searchbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      align-items: center;
-      margin-bottom: 15px;
-      padding: 0px 0 0 21px;
-    }
-    section .searchbar #localisation {
-      padding: 16px 15px;
-      font-size: 18px;
-    }
-    
-    section .searchbar .btn-search {
-      padding: 11px 22px;
-      font-size: 15px;
-    }
-    section .searchbar .fa-map-marker-alt {
-      padding: 9px 29px;
-      font-size: 36px;
-    }
-    section .searchbar .btn-search span{
-      display:none; 
-    }
-    section .searchbar .btn-search .fa-search{
-      color: white;
-      display: contents;
-      font-size: 30px;
-    }
-  
-    #filter {
-      display: flex;
-      padding: 2%;
-      flex-wrap: wrap;
-    }
-    #filter h4{
-      margin: 0;
-    }
-  
-    #filter ul {
-      margin-bottom: 0;
-      flex-wrap: wrap;
-      padding: 0;
-    }
-  
-    #filter ul .select_filter {
-      margin: 10px;
-    }
-}  
+  }
+
+  section .title {
+    padding: 20px 40px 10px 30px;
+    line-height: initial;
+  }
+
+  section .searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0px 0 0 21px;
+  }
+
+  section .searchbar #localisation {
+    padding: 16px 15px;
+    font-size: 18px;
+  }
+
+  section .searchbar .btn-search {
+    padding: 11px 22px;
+    font-size: 15px;
+  }
+
+  section .searchbar .fa-map-marker-alt {
+    padding: 9px 29px;
+    font-size: 36px;
+  }
+
+  section .searchbar .btn-search span {
+    display: none;
+  }
+
+  section .searchbar .btn-search .fa-search {
+    color: white;
+    display: contents;
+    font-size: 30px;
+  }
+
+  #filter {
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+  }
+
+  #filter h4 {
+    margin: 0;
+  }
+
+  #filter ul {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  #filter ul .select_filter {
+    margin: 10px;
+  }
+}

@@ -222,6 +222,7 @@
     #hosting {
         padding: 1%;
     }
+
     #products {
         margin-right: 12px;
     }
@@ -238,7 +239,7 @@
     #products #allproduct .card-hotel img {
         height: 63px;
     }
-    
+
     #products #allproduct .card-hotel .description {
         margin: 0;
         line-height: 15Px;
@@ -247,7 +248,7 @@
         justify-content: space-between;
         height: 85px;
     }
-    
+
     #hosting #products #allproduct .card-hotel .description .title_product {
         margin: 0px 0 10px 0px;
     }
@@ -256,6 +257,7 @@
         margin: 0;
         font-size: 13px;
     }
+
     #most-popular {
         width: 48%;
         padding: 11px;
@@ -265,6 +267,11 @@
         margin: 7px 0 9px 0px;
         font-size: 16px;
     }
+
+    #most-popular .card-hotel {
+        margin-bottom: 8%;
+    }
+
     .mosthotel {
         padding: 4px;
     }
@@ -294,7 +301,7 @@
     }
 
     .mosthotel {
-        height: 120px;
+        height: 170px;
     }
 
     #most-popular {
@@ -305,6 +312,13 @@
         display: grid;
         align-self: center;
     }
+
+    #most-popular .card-hotel {
+        position: relative;
+        margin-bottom: 8%;
+        width: 90%;
+    }
+
 
     /* Title aside products */
 
@@ -320,8 +334,14 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
     }
-    
+
+    #hosting #most-popular .card-hotel a .description {
+        display: grid;
+        height: 153px;
+    }
+
     #hosting #most-popular .card-hotel a .description h5 {
         margin: 0;
         font-size: 14px;
@@ -339,15 +359,17 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin-right: 0;
         border-radius: 0;
     }
-    
+
     #products #allproduct .card-hotel {
-        width: 100%;
+        width: 89%;
         height: 100%;
+        margin-bottom: 4%;
     }
+
     #products #allproduct .card-hotel img {
         height: 150px;
     }

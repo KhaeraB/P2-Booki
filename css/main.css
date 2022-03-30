@@ -1,4 +1,4 @@
-/****** Start - Main *******/
+/****** Main *******/
 
 /* Filter Categories */
 
@@ -79,24 +79,27 @@ main .info .fa-info {
 /* TABLETTE */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  #filter { 
+  #filter {
     padding: 0px 30px;
     flex-wrap: wrap;
   }
-  #filter h4{
-    margin-bottom: 0; 
+
+  #filter h4 {
+    margin-bottom: 0;
   }
-  #filter ul {  
+
+  #filter ul {
     flex-wrap: wrap;
-  } 
+  }
+
   .select_filter {
     margin: 9px 19px;
   }
 
   main .info {
     padding-left: 30px;
-}
-  
+  }
+
 }
 
 /* MOBILE */
@@ -126,5 +129,5 @@ main .info .fa-info {
   main .info {
     padding: 20px;
   }
-  
+
 }
